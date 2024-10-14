@@ -1,0 +1,30 @@
+history tables
+documents - jpg,jpeg,png,pdf - save to database as blob
+https://erkanyasun.medium.com/simplifying-file-uploads-in-spring-boot-with-multipartfile-eb8bbef68dfe
+validations on UI and backend
+https://www.geeksforgeeks.org/spring-mvc-validation/
+unique constraints - https://www.baeldung.com/jpa-unique-constraints
+https://www.baeldung.com/spring-boot-formatting-json-dates
+https://www.baeldung.com/hibernate-date-time
+
+is married
+pets?
+family info - name, age,
+jsonignore for password
+jsonproperty access write_only for password
+@JsonInclude(JsonInclude.Include.NON_NULL)
+
+https://medium.com/@aykutbkaya/spring-boot-password-validation-with-passay-policies-20ab541cbea5  - PasswordConstraintsValidator
+auth response - return jwt
+password reset - send temp password via email, whatsapp, sms
+
+on UI - if mobile and whatsapp same, then copy mobile to whatsapp field
+mobile - add - india code (+91)
+fetch type eager?
+https://www.baeldung.com/jpa-persisting-enums-in-jpa
+indexes
+controller
+services
+repo
+
+postman collection
