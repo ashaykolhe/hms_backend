@@ -2,6 +2,7 @@ package com.kolhe.hms.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.kolhe.hms.model.dms.Document;
 import com.kolhe.hms.model.tenant.ContactInformation;
 import com.kolhe.hms.model.tenant.EnumRole;
 import com.kolhe.hms.model.tenant.IdentityDocuments;
@@ -15,6 +16,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -59,4 +61,7 @@ public class User {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "personal_info_id")
     private PersonalInfo personalInfo;
+
+    @OneToMany(mappedBy = "createdBy")
+    private List<Document> uploadedDocuments;
 }

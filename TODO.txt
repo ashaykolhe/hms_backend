@@ -28,3 +28,19 @@ services
 repo
 
 postman collection
+https://www.softwareideas.net/a/458/dms--document-management-system-project-diagrams-
+permission who can see documents?
+    user can see their own document.
+    superuser/admin can see all documents
+superuser powers?
+
+spring security - jwt, roles and permission based access -
+    https://riteshpanigrahi.com/series/spring-security
+    https://riteshpanigrahi.com/what-is-spring-security
+    https://riteshpanigrahi.com/getting-started-with-spring-security
+    https://riteshpanigrahi.com/what-is-basic-auth-and-how-to-secure-apis-using-it
+    https://riteshpanigrahi.com/understanding-roles-and-authorities-and-how-to-create-them-using-enums
+    https://riteshpanigrahi.com/spring-security-role-based-authentication
+    https://riteshpanigrahi.com/spring-security-permission-based-authentication
+
+2nd level cache
