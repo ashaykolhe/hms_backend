@@ -30,5 +30,6 @@ public class FamilyInfo {
     @JoinColumn(name = "contact_information_id")
     private ContactInformation contactInformation;
     @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "personal_info_id")
     private PersonalInfo personalInfo;
 }

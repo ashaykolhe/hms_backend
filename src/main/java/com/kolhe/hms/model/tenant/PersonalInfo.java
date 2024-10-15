@@ -17,6 +17,6 @@ public class PersonalInfo {
     private Long id;
     private Boolean isMarried;
     private Boolean pets;
-    @OneToMany(mappedBy = "personalInfo")
+    @OneToMany(mappedBy = "personalInfo", cascade = CascadeType.ALL)
     private List<FamilyInfo> familyInfoList;
 }

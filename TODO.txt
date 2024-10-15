@@ -7,9 +7,6 @@ unique constraints - https://www.baeldung.com/jpa-unique-constraints
 https://www.baeldung.com/spring-boot-formatting-json-dates
 https://www.baeldung.com/hibernate-date-time
 
-is married
-pets?
-family info - name, age,
 jsonignore for password
 jsonproperty access write_only for password
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -21,6 +18,7 @@ password reset - send temp password via email, whatsapp, sms
 on UI - if mobile and whatsapp same, then copy mobile to whatsapp field
 mobile - add - india code (+91)
 fetch type eager?
+check where cascadeall required
 https://www.baeldung.com/jpa-persisting-enums-in-jpa
 indexes
 controller
@@ -43,4 +41,16 @@ spring security - jwt, roles and permission based access -
     https://riteshpanigrahi.com/spring-security-role-based-authentication
     https://riteshpanigrahi.com/spring-security-permission-based-authentication
 
+by default registration will create tenant role
+only superuser can assign admin/owner roles and permissions
+
+
+controller advice
+exceptions
+
+
 2nd level cache
+https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
+https://www.baeldung.com/spring-data-derived-queries
+
+logger

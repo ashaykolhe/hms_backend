@@ -1,5 +1,6 @@
 package com.kolhe.hms.model.tenant;
 
+import com.kolhe.hms.model.dms.Document;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -20,6 +21,6 @@ public class IdentityDocuments {
     @Size(min = 10, max = 10, message = "Pan number must be of 10 characters")
     @Column(unique = true)
     private String pan;
-    @Lob
-    private byte[] photo;
+    @OneToOne
+    private Document photo;
 }

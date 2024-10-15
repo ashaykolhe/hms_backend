@@ -1,0 +1,67 @@
+{
+  "id": null,
+  "firstName": null,
+  "middleName": null,
+  "lastName": null,
+  "fullName": null,
+  "contactInformation": {
+    "id": null,
+    "address": {
+      "id": null,
+      "addressLine1": null,
+      "addressLine2": null,
+      "city": null,
+      "state": null,
+      "pincode": null,
+      "country": null
+    },
+    "mobile": null,
+    "alternateMobile": null,
+    "email": null,
+    "whatsapp": null
+  },
+  "createdDate": null,
+  "modifiedDate": null,
+  "identityDocuments": {
+    "id": null,
+    "aadhar": null,
+    "pan": null,
+    "photo": null
+  },
+  "role": null,
+  "userName": null,
+  "age": null,
+  "personalInfo": {
+    "id": null,
+    "isMarried": null,
+    "pets": null,
+    "familyInfoList": [
+      {
+        "id": null,
+        "firstName": null,
+        "middleName": null,
+        "lastName": null,
+        "fullName": null,
+        "age": null,
+        "contactInformation": {
+          "id": null,
+          "address": {
+            "id": null,
+            "addressLine1": null,
+            "addressLine2": null,
+            "city": null,
+            "state": null,
+            "pincode": null,
+            "country": null
+          },
+          "mobile": null,
+          "alternateMobile": null,
+          "email": null,
+          "whatsapp": null
+        },
+        "personalInfo": null
+      }
+    ]
+  },
+  "uploadedDocuments": null
+}
