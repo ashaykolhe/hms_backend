@@ -4,5 +4,5 @@ public enum EnumRole {
     TENANT,
     ADMIN,
     OWNER,
-    SUPERUSER
+    GOD
 }

@@ -54,3 +54,54 @@ https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
 https://www.baeldung.com/spring-data-derived-queries
 
 logger
+
+pay rent functionality
+upload rent phone pe receipt
+update rent paid date
+email on successful payment online or cash
+whatsapp api
+free sms service
+free payment gateway
+payment history
+get unpaid rent by username
+electric bill with rent
+rent paid printout
+reminder/notification/message if rent not paid
+bike info if owns
+rent info in which model?
+pan and adhar unique
+upload size limit
+manually check pan adhar, if exists throw exception and catch in global handler
+deployments log search
+Yupp for schema validation in react
+
+rent start date for future reminders
+inheritance
+
+owner is a user
+tenant is a user
+owner has a home
+home has tenants
+minimum info while registering and rest info later
+reminders to update missing info
+dtos with validations, dont use models in requestbody
+use mappers like mapstruct to convert dto to model
+use builder pattern to convert dto to model
+God instead of superuser
+chat with owner or other tenants
+who's your roommate info
+room number info for tenant
+home info - has 2 bedrooms, 1 kitchen, 1 hall
+home has electric bill + rent
+home income tax + other uploaded documents filter by document type
+rent paid by tenant goes to approval to owner. if owner not approved or rejected, talk to owner
+complaint raise system - notification/reminder to owner for complaints
+admin dashboard - list of payment approvals
+onetomany or manytoone - which one to save
+DMS category wise filters
+verify email and mobile
+country code - by default select 91
+GOD can change role for anyone through admin panel while updating user
+
+https://stackoverflow.com/questions/55579240/spring-data-find-by-property-of-a-nested-object
+remove all validations from models

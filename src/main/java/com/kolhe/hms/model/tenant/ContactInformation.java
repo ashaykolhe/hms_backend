@@ -19,8 +19,9 @@ public class ContactInformation {
     private Long id;
     @JoinColumn(name = "address_id")
     @ManyToOne(cascade = CascadeType.ALL)
-    @NotNull(message = "Address cannot be null")
+//    @NotNull(message = "Address cannot be null")
     private Address address;
+    private Integer mobileCountryCode;
     @Size(min = 10, max = 10, message = "Mobile must be 10 characters")
     @NotBlank(message = "Mobile number is required")
     private String mobile;

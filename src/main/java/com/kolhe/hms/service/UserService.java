@@ -27,4 +27,16 @@ public class UserService implements IUserService {
         Optional<User> user = userRepository.findByUserName(userName);
         return user.orElseThrow(() -> new UserNotFoundException("User not found."));
     }
+
+    @Override
+    public User findByEmail(String email) throws UserNotFoundException {
+        Optional<User> user = userRepository.findByContactInformation_Email(email);
+        return user.orElseThrow(() -> new UserNotFoundException("User not found."));
+    }
+
+    @Override
+    public User findByMobile(String mobile) throws UserNotFoundException {
+        Optional<User> user = userRepository.findByContactInformation_Mobile(mobile);
+        return user.orElseThrow(() -> new UserNotFoundException("User not found."));
+    }
 }

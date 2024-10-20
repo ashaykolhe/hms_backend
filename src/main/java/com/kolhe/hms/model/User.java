@@ -12,12 +12,14 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Builder
 @Entity
 @Data
 @AllArgsConstructor
@@ -26,20 +28,16 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Size(min = 1, max = 20, message = "First name must be between 1 and 20 characters")
     private String firstName;
-    @Size(min = 1, max = 20, message = "Middle name must be between 1 and 20 characters")
     private String middleName;
-    @Size(min = 1, max = 20, message = "Last name must be between 1 and 20 characters")
     private String lastName;
-    @Size(min = 1, max = 60, message = "Full name must be between 1 and 60 characters")
     private String fullName;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "contact_information_id")
     @NotNull
     @Valid
     private ContactInformation contactInformation;
-    private LocalDateTime createdDate;
+    private LocalDateTime createdDate = LocalDateTime.now();
     private LocalDateTime modifiedDate;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "identity_documents_id")

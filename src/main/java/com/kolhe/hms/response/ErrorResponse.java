@@ -12,7 +12,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ErrorResponse {
-    String httpStatue;
+    String httpStatus;
     String message;
     Map<String, String> errors = new HashMap<>();
 }
